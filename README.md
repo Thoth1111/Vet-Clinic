@@ -116,6 +116,6 @@ I would like to thank Microverse for the training.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Thoth1111/Vet-Clinic/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/Thoth1111/Vet-Clinic/blob/main/License) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
