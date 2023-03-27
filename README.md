@@ -1,5 +1,3 @@
-## Vet-Clinic
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -19,7 +17,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet-Clinic] <a name="about-project"></a>
+# 📖 Vet-Clinic <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
@@ -118,6 +116,6 @@ I would like to thank Microverse for the training.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Thoth1111/Vet-Clinic/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
