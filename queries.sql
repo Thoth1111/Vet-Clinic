@@ -39,3 +39,36 @@ UPDATE animals
 SET weight_kg = weight_kg * -1
 WHERE weight_kg < 0;
 COMMIT;
+
+/* Queries */
+SELECT COUNT(*) FROM animals;
+
+SELECT
+COUNT(escape_attempts)
+FROM
+animals
+GROUP BY escape_attempts
+HAVING (escape_attempts) = 0; 
+
+SELECT AVG(weight_kg) FROM animals;
+
+SELECT name, escape_attempts
+FROM animals
+INNER JOIN (
+  SELECT MAX(escape_attempts) AS max_escapes
+  FROM animals
+) AS max_animals
+ON escape_attempts = max_escapes;
+
+SELECT 
+species, MIN(weight_kg), MAX(weight_kg)
+FROM
+animals
+GROUP BY species;
+
+SELECT 
+species, AVG(escape_attempts)
+FROM
+animals
+WHERE date_of_birth >= '1990-01-01' AND date_of_birth < '2001-01-01'
+GROUP BY species;
