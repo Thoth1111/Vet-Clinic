@@ -4,7 +4,7 @@ INSERT INTO animals (name,date_of_birth,escape_attempts,neutered,weight_kg) VALU
 INSERT INTO animals (name,date_of_birth,escape_attempts,neutered,weight_kg) VALUES ('Pikachu', '2021-1-7', 2, false, 15.04);
 INSERT INTO animals (name,date_of_birth,escape_attempts,neutered,weight_kg) VALUES ('Devimon', '2017-5-12', 5, true, 11);
 
-/*Insert additional data. */
+/*Insert additional data to animals. */
 INSERT INTO animals (
 	name,date_of_birth,escape_attempts,neutered,weight_kg
 )
