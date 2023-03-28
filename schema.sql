@@ -8,4 +8,7 @@ CREATE TABLE animals (
     neutered boolean, 
     weight_kg double precision, 
     PRIMARY KEY(id) 
-    );
+);
+
+/*Add species column to animals table in database. */
+ALTER TABLE animals ADD COLUMN species varchar;
