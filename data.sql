@@ -96,3 +96,18 @@ INSERT INTO owners (
 VALUES (
 	'Jodie Whittaker', 38
 );
+
+/* Inserts to species table */
+INSERT INTO species (
+	name
+)
+VALUES (
+	'Pokemon'
+);
+
+INSERT INTO species (
+	name
+)
+VALUES (
+	'Digimon'
+);
