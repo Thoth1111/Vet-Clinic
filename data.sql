@@ -111,3 +111,34 @@ INSERT INTO species (
 VALUES (
 	'Digimon'
 );
+
+/* Add species id where animnal name ends in 'mon'*/
+UPDATE animals 
+SET species_id = (SELECT id FROM species WHERE name = 'Digimon')
+WHERE name LIKE '%mon';
+
+/* Add species id where animnal name doesn't end in 'mon'*/
+UPDATE animals 
+SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
+WHERE name NOT LIKE '%mon';
+
+/* Add owner id data */
+UPDATE animals 
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE animals.name LIKE 'Agumon';
+
+UPDATE animals 
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE animals.name IN ('Gabumon', 'Pikachu');
+
+UPDATE animals 
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE animals.name IN ('Devimon', 'Plantmon');
+
+UPDATE animals 
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE animals.name IN ('Charmander', 'Squirtle', 'Blossom');
+
+UPDATE animals 
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE animals.name IN ('Angemon', 'Boarmon');
