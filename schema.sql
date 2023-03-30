@@ -10,17 +10,31 @@ CREATE TABLE animals (
     PRIMARY KEY(id) 
 );
 
-/*Add species column to animals table in database. */
+/* Add species column to animals table in database. */
 ALTER TABLE animals ADD COLUMN species varchar;
 
 /* Additional tables. */
 CREATE TABLE owners (
-	id SERIAL PRIMARY KEY,
+	id INT GENERATED ALWAYS AS IDENTITY,
 	full_name VARCHAR(100),
-	age INT
+	age INT,
+    PRIMARY KEY(id) 
 );
 
 CREATE TABLE species (
-	id SERIAL PRIMARY KEY,
-	name VARCHAR(100)
+	id INT GENERATED ALWAYS AS IDENTITY,
+	name VARCHAR(100),
+    PRIMARY KEY(id) 
 );
+
+/* Drop species column from animals table */
+ALTER TABLE animals DROP COLUMN species;
+
+/* Add foreign key columns to animals table */
+ALTER TABLE animals
+ADD COLUMN species_id INT
+REFERENCES species(id);
+
+ALTER TABLE animals
+ADD COLUMN owner_id INT
+REFERENCES owners(id);
