@@ -23,7 +23,7 @@
 
 **[Vet-Clinic]** is a project setup using a relational database to create the data structure for a vet clinic. It contains data about animals, animals' owners, clinic employees, and visits.
 
-<img src="./schema-diagram.png" style="width: 200px; height: 100px; margin: auto;">
+<img src="./schema-diagram.png" style="width: 500px; height: 300px; margin: auto;">
 
 ## 🛠 Built With <a name="built-with"></a>
 
